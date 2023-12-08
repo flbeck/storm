@@ -20,18 +20,18 @@
 ## FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 ## DEALINGS IN THE SOFTWARE.##
 
-name: storm_kit
+name: storm_3.10
 channels:
   - pytorch
   - conda-forge
 dependencies:
-  - python=3.7
-  - cudatoolkit=11.1
+  - python=3.8
+  - cudatoolkit
   - pytorch
   - torchvision
   - torchaudio
   - pyzmq
-  - numpy
+  - numpy=1.19
   - pytest
   - colorlog
   - pandas
@@ -40,9 +40,10 @@ dependencies:
   - sk-video
   - matplotlib
   - quaternion
+  - pytorch3d
   - pip:
-    - pytorch3d
-    - ghalton
+    #    - pytorch3d
+    #- ghalton
     - argcomplete
     - click
     - cloudpickle
@@ -61,6 +62,6 @@ dependencies:
     - urdf_parser_py
     - numpy-quaternion
     - opencv-python
-    - open3d
+      #- open3d
     - m2r2
 
